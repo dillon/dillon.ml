@@ -4,6 +4,7 @@
 	color: black;
 	animation: pulse 5s infinite;
 	animation-direction: alternate;
+	animation-timing-function: ease;
 }
 
 @keyframes pulse {
@@ -16,7 +17,7 @@
 }
 
 #neon a:hover, #neon:focus {
-    animation-play-state: paused;
+		animation-duration:.000001s;
 		text-decoration: underline;
 		color:red;
 		opacity:1;
