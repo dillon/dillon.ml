@@ -16,8 +16,13 @@
   }
 }
 
+@-webkit-keyframes reset9 {
+  to {width: auto;}
+}
+
 #neon a:hover, #neon:focus {
-		animation-duration:.000001s;
+	animation-name: reset9;
+		/*animation-duration:.000001s;*/
 		text-decoration: underline;
 		color:red;
 		opacity:1;
