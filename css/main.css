@@ -60,9 +60,10 @@ img {
 	vertical-align: top;
 }
 #cousins {
-	left:333px;
+	left:250px;
 	top:222px;
 	position:absolute;
+
 }
 #cousins ul{
 	list-style:none;
