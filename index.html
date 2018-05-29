@@ -12,7 +12,19 @@
     <link rel="stylesheet" type="text/css" href="css/main.css" />
     <link rel="shortcut icon" href="pictures/main/jingle.png" type="image/x-icon" />
 </head>
+<style>
+ #mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
 
+#mydiv {cursor: -webkit-grab; cursor: grab;}
+#mydiv:active {cursor: -webkit-grabbing; cursor: grabbing;}
+
+</style>
 <body>
     <div id="neon">
         <div class="element">
@@ -34,8 +46,46 @@
         </ul>
     </div>
     <div id="cousins">
-        <img src="pictures/main/R0000264-3.jpg" width="500" alt="" />
+<div id="mydiv">
+    <img src="pictures/main/R0000264-3.jpg" width="500" alt="" />
+</div> 
         <script>
+dragElement(document.getElementById(("mydiv")));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+
+
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
               (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
               m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
