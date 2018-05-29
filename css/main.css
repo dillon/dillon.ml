@@ -1,5 +1,5 @@
 /* Main index CSS */
-#neon a{
+#neon a {
 	text-decoration: none;
 	color: black;
 	animation: pulse 5s infinite;
@@ -8,77 +8,82 @@
 }
 
 @keyframes pulse {
-  0% {
-    opacity:1;
-  }
-  100% {
-    opacity:0;
-  }
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
 }
-
 
 @-webkit-keyframes reset9 {
-  to {width: auto;}
+	to {
+		width: auto;
+	}
 }
 
-#neon a:hover, #neon:focus {
+#neon a:hover,
+#neon:focus {
 	animation-name: reset9;
-		/*animation-duration:.000001s;*/
-		text-decoration: underline;
-		color:red;
-		opacity:1;
+	/*animation-duration:.000001s;*/
+	text-decoration: underline;
+	color: red;
+	opacity: 1;
 }
 #neon a:active {
 	text-decoration: underline;
-	color:red;
+	color: red;
 }
 #neon ul {
-	list-style:none;
+	list-style: none;
 	margin: 0px;
 	padding: 0;
 	white-space: nowrap;
 }
 
 body {
-	position:relative;
-	background-color:#eaeaea;
-	margin:50px;
-	padding:0px;
-
+	position: relative;
+	background-color: #eaeaea;
+	margin: 50px;
+	padding: 0px;
 }
 h1 {
-	font-style:italic;
-	font-size:20px;
+	font-style: italic;
+	font-size: 20px;
 }
 h2 {
-	font-size:44px;
-	padding:0;
-	margin:0;
+	font-size: 44px;
+	padding: 0;
+	margin: 0;
 }
 img {
-	border:none;
+	border: none;
 	vertical-align: top;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
 }
 #cousins {
-	left:120px;
-	top:222px;
-	position:absolute;
-
+	left: 120px;
+	top: 222px;
+	position: absolute;
 }
-#cousins ul{
-	list-style:none;
+#cousins ul {
+	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 #brothers {
-	left:-30px;
-	top:150px;
-	position:absolute;
+	left: -30px;
+	top: 150px;
+	position: absolute;
 	z-index: -1;
-
 }
-#brothers ul{
-	list-style:none;
-	margin:0;
-	padding:0;
+#brothers ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
