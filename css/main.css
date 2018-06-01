@@ -65,18 +65,12 @@ img {
 	-webkit-user-drag: none;
 	-webkit-user-select: none;
 	-ms-user-select: none;
+	pointer-events:none;
 }
 #cousins {
-<<<<<<< HEAD
 	left: 120px;
 	top: 222px;
 	position: absolute;
-=======
-	left:250px;
-	top:222px;
-	position:absolute;
-
->>>>>>> parent of c503fb8... reposition image
 }
 #cousins ul {
 	list-style: none;
