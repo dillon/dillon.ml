@@ -1,0 +1,79 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    background-color: #eaeaea;
+    margin: 50px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    white-space: nowrap;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    animation: pulse 5s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease;
+}
+
+a:hover,
+a:focus {
+    animation-name: reset9;
+    /*animation-duration:.000001s;*/
+    text-decoration: underline;
+    color: red;
+    opacity: 1;
+}
+
+a:active {
+    text-decoration: underline;
+    color: red;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes reset9 {
+    to {
+        width: auto;
+    }
+}
+
+img {
+    border: none;
+    vertical-align: top;
+    user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    pointer-events: none;
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    border: 1px solid #d3d3d3;
+    text-align: center;
+}
+
+#mydiv {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+#mydiv:active {
+    cursor: -webkit-grabbing;
+    cursor: grabbing;
+}
