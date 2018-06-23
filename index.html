@@ -14,85 +14,42 @@
 </head>
 
 <body>
-    <ul>
-        <li>
-            <a href="">Dillon Petito</a>
-        </li>
-        <li>
-            <a href="mailto:dillonpetito@gmail.com">*</a>
-        </li>
-        <li>
-            <a href="https://40peststreet.ml" target="_blank" title="40 Pest Street">40 Pest Street,
-                    <em>Alyssa Davis Gallery</em>
-            </a>
-        </li>
+    <div class="container">
+        <ul>
+            <header>
+                <li>
+                    <a href="">Dillon Petito</a>
+                </li>
+                <li>
+                    <a href="mailto:dillonpetito@gmail.com">*</a>
+                </li>
+            </header>
+            <main>
+                <li>
+                    <a href="https://40peststreet.ml" target="_blank" title="40 Pest Street">40 Pest Street,
+                        <em>Alyssa Davis Gallery</em>
+                    </a>
+                </li>
 
-        <li>
-            <a href="https://rhizome.org/editorial/2016/nov/17/antoni-muntadas-the-file-room/" target="_blank" title="The File Room">The File Room: An Open-Source Library of Censorship,
-                    <em>Rhizome</em>
-            </a>
-        </li>
-        <li>
-            <a href="https://dismagazine.com/dystopia/83736/the-choice-is-yours/" target="_blank" title="The Choice is Yours">The Choice is Yours,
-                    <em>DIS Magazine</em>
-            </a>
-        </li>
-        <li>
-            <a href="https://curiosities.ml/" target="_blank" title="Curiosities">Curiosities,
-                    <em>17 Essex</em>
-            </a>
-        </li>
-    </ul>
+                <li>
+                    <a href="https://rhizome.org/editorial/2016/nov/17/antoni-muntadas-the-file-room/" target="_blank" title="The File Room">The File Room: An Open-Source Library of Censorship,
+                        <em>Rhizome</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dismagazine.com/dystopia/83736/the-choice-is-yours/" target="_blank" title="The Choice is Yours">The Choice is Yours,
+                        <em>DIS Magazine</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://curiosities.ml/" target="_blank" title="Curiosities">Curiosities,
+                        <em>17 Essex</em>
+                    </a>
+                </li>
+        </ul>
+        <img src="pictures/main/R0000264-3.jpg" alt="beach" />
     </div>
-    <div id="cousins" style="margin-left:120px;margin-top:70px">
-        <span></span>
-        <span id="mydiv">
-            <img src="pictures/main/R0000264-3.jpg" draggable="false" (dragstart)="false;" alt="beach" />
-        </span>
-        <script>
-            dragElement(document.getElementById(("mydiv")));
-            function dragElement(elmnt) {
-                var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-                if (document.getElementById(elmnt.id + "header")) {
-                    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-                } else {
-                    elmnt.onmousedown = dragMouseDown;
-                }
-
-                function dragMouseDown(e) {
-                    e = e || window.event;
-                    pos3 = e.clientX;
-                    pos4 = e.clientY;
-                    document.onmouseup = closeDragElement;
-                    document.onmousemove = elementDrag;
-                }
-
-                function elementDrag(e) {
-                    e = e || window.event;
-                    pos1 = pos3 - e.clientX;
-                    pos2 = pos4 - e.clientY;
-                    pos3 = e.clientX;
-                    pos4 = e.clientY;
-                    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-                    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-                }
-
-                function closeDragElement() {
-                    document.onmouseup = null;
-                    document.onmousemove = null;
-                }
-            }
-
-            (function (i, s, o, g, r, a, m) {
-                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                    (i[r].q = i[r].q || []).push(arguments)
-                }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                    m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-            ga('create', 'UA-91611371-1', 'auto');
-            ga('send', 'pageview');
-        </script>
+    </main>
 </body>
 
 </html>

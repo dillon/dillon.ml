@@ -4,14 +4,22 @@ body {
     font-family: 'Times New Roman', Times, serif;
     position: relative;
     background-color: #eaeaea;
-    margin: 3rem;
-    font-size: .85rem;
+    margin: 2rem;
+    font-size: 1rem;
+}
+
+.container {
+    width:100%;
+    max-width:30rem;
+}
+
+img {
+    width:100%;
 }
 
 ul {
     list-style: none;
     padding: 0;
-    white-space: nowrap;
 }
 
 a {
@@ -25,7 +33,6 @@ a {
 a:hover,
 a:focus {
     animation-name: reset9;
-    /*animation-duration:.000001s;*/
     text-decoration: underline;
     color: red;
     opacity: 1;
@@ -49,35 +56,4 @@ a:active {
     to {
         width: auto;
     }
-}
-
-img {
-    width:30rem;
-    border: none;
-    vertical-align: top;
-    -ms-user-drag: none;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    pointer-events: none;
-}
-
-#mydiv {
-    position: absolute;
-    z-index: 9;
-    background-color: #f1f1f1;
-    border: 1px solid #d3d3d3;
-    text-align: center;
-}
-
-#mydiv {
-    cursor: -webkit-grab;
-    cursor: grab;
-}
-
-#mydiv:active {
-    cursor: -webkit-grabbing;
-    cursor: grabbing;
 }
