@@ -1,8 +1,11 @@
-html {
+/* Main index CSS */
+
+body {
     font-family: 'Times New Roman', Times, serif;
     position: relative;
     background-color: #eaeaea;
-    margin: 50px;
+    margin: 3rem;
+    font-size: .85rem;
 }
 
 ul {
@@ -49,9 +52,10 @@ a:active {
 }
 
 img {
+    width:30rem;
     border: none;
     vertical-align: top;
-    user-drag: none;
+    -ms-user-drag: none;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
